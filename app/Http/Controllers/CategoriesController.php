@@ -14,6 +14,7 @@ use App\Models\Categories;
 
 class CategoriesController extends Controller
 {
+	//test
     //url: public/admin/categories
     public function read(){
     	$data = Categories::orderBy("id","desc")->paginate(4);
